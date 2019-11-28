@@ -15,6 +15,11 @@ API desenvolvida com Typescript, NodeJS, Express, MongoDB via Docker e Swagger
 
 Documentação da API disponível em: `http://localhost:5656/swagger` via Swagger
 
+## Ferramentas auxiliares
+
+-   `Postman:` Teste de endpoints
+-   `MongoDB Compass:` Interface gráfica e simples para ter acesso ao MongoDB
+
 ## Licenças
 
 Nenhuma, xd.
