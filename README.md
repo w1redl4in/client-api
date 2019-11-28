@@ -1,4 +1,4 @@
-# Clientes API
+# Client API
 
 API desenvolvida em Typescript, NodeJS, Express, MongoDB via Docker e Swagger
 
