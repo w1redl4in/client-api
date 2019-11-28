@@ -1,0 +1,53 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Client API",
+        "version": "1.0.0",
+        "description": "API criada com NodeJS, Express, MongoDB via Docker e Typescript"
+    },
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/clientes": {
+            "get": {
+                "tags": ["Cliente"],
+                "description": "Retorna uma lista de todos os clientes cadastrados no MongoDB",
+                "summary": "findAll",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Cliente"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["Cliente"],
+                "description": "Endpoint utilizado para criação de dados no MongoDB",
+                "summary": ""
+            }
+        }
+    },
+    "host": "localhost:5656",
+    "basePath": "",
+    "definitions": {
+        "Cliente": {
+            "properties": {
+                "id": {
+                    "type": "String"
+                },
+                "nome": {
+                    "type": "String"
+                },
+                "email": {
+                    "type": "String"
+                }
+            }
+        }
+    }
+}
