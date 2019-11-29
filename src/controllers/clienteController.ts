@@ -2,6 +2,16 @@ import { Request, Response } from 'express'
 import { Cliente, ICliente } from './../models/Cliente'
 
 class clienteController {
+    // ROOT
+    public root(req: Request, res: Response) {
+        res.json({
+            rotas: {
+                swagger: '/swagger',
+                clientes: '/clientes - GET, POST',
+                cliente: '/cliente/:id - GET, PUT, DELETE'
+            }
+        })
+    }
     // POST
     public async inserirCliente(
         req: Request,
@@ -44,6 +54,7 @@ class clienteController {
         )
     }
 
+    // DELETE
     public async removerCliente(req: Request, res: Response) {
         await Cliente.findOneAndDelete(
             { _id: req.params.id },

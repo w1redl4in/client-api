@@ -1,6 +1,6 @@
 # Client API
 
-API desenvolvida com Typescript, NodeJS, Express, MongoDB via Docker e Swagger
+-   API desenvolvida com Typescript, NodeJS, Express, MongoDB via Docker e Swagger
 
 ## Requerimentos
 

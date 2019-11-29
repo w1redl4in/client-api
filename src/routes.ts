@@ -11,5 +11,6 @@ routes.get('/cliente/:id', clienteController.pegarCliente)
 routes.put('/cliente/:id', clienteController.atualizarCliente)
 routes.delete('/cliente/:id', clienteController.removerCliente)
 routes.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+routes.get('/', clienteController.root)
 
 export default routes
